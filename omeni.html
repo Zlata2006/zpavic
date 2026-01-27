@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>O meni – Zlata Pavić</title>
+<style>
+    /* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0b1d3a; /* tamno plava pozadina */
+        color: #ffffff;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* NAVBAR */
+    nav {
+        background-color: #142850;
+        padding: 15px 30px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        color: #8fb3ff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        color: #8fb3ff;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        max-width: 900px;
+        color: #d0d0d0;
+    }
+
+    /* SEKCIJE RADOVA */
+    .sekcija {
+        background-color: #142850;
+        padding: 25px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .sekcija a {
+        color: #8fb3ff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .sekcija a:hover {
+        color: #ffffff;
+    }
+
+    /* GALERIJA SLIKA */
+    .galerija {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .galerija img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 2px solid #8fb3ff;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .galerija img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    /* VIDEO */
+    .video iframe {
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        max-width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        font-size: 16px;
+        color: #8fb3ff;
+        opacity: 0.9;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 36px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+        nav a {
+            display: block;
+            margin: 10px 0;
+        }
+        .galerija img {
+            width: 45%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .galerija img {
+            width: 90%;
+            height: auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="Omeni.html">O meni</a>
+        <a href="vjezbe.html">Vježbe</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <h2>O meni – Zlata Pavić</h2>
+
+    <div class="sekcija">
+        <p>
+            Dolazim iz <b>Rijeke</b> i imam 19 godina. Završila sam gimnaziju, a trenutno studiram grafički dizajn jer se u budućnosti želim profesionalno baviti tim područjem. Kreativnost mi je važan dio života, što se vidi i kroz moje hobije. Volim plesati jer mi omogućuje izražavanje kroz pokret, a kuhanje mi predstavlja opuštanje i način da isprobavam nove ideje i okuse. Smatram se kreativnom, znatiželjnom i motiviranom osobom koja želi učiti i razvijati se.
+        </p>
+    </div>
+
+    <div class="sekcija">
+        <h3>Moji radovi kroz semestar:</h3>
+        <div class="galerija">
+            <img src="kolaz/znacajkemoderneumj.jpeg" alt="Značajke moderne umjetnosti">
+            <img src="kolaz/makeup.JPG" alt="Make up">
+            <img src="kolaz/modernaglazba.jpeg" alt="Moderna glazba">
+        </div>
+    </div>
+
+    <div class="sekcija">
+        <h3>Moja najdraža pjesma:</h3>
+        <div class="video">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/bEAOzOTm6bU?list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbAVMqpnFz9fg044&index=2" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Zlata Pavić
+    </footer>
+
+</body>
+</html>
+
