@@ -171,36 +171,17 @@ footer {
 <body>
 
 <nav>
-    <a href="ZlataPavic.html">Početna</a>
-    <a href="Omeni.html">O meni</a>
+    <a href="index.html">Početna</a>
+    <a href="omeni.html">O meni</a>
     <a href="vjezbe.html">Vježbe</a>
     <a href="video.html">Video</a>
 </nav>
-
-<h1>Dobrodošli</h1>
-<h2>Moja stranica</h2>
-
-<div class="sekcija">
-    <h3>O meni</h3>
-    <p>
-        Dolazim iz <b>Rijeke</b> i trenutno studiram grafički dizajn. Kreativnost mi je važna, volim plesati, kuhati i raditi projekte iz digitalne multimedije.
-    </p>
-</div>
-
-<div class="sekcija">
-    <h3>Moji radovi</h3>
-    <div class="galerija">
-        <img src="slike/skijanje.jpg" alt="Skijanje">
-        <img src="slike/kuhanje.jpg" alt="Kuhanje">
-        <img src="slike/balet.jpg" alt="Balet">
-    </div>
-</div>
 
 <div class="sekcija">
     <h3>Video projekt</h3>
     <div class="video">
         <video controls>
-            <source src="video/reklama_cedevita.mp4" type="video/mp4">
+            <source src="reklama_cedevita.mp4" type="video/mp4">
             Tvoj preglednik ne podržava video.
         </video>
     </div>
